@@ -1,0 +1,1 @@
+python3.6 -m grpc_tools.protoc -I/usr/local/lib/python3.6/dist-packages/ -I./ --python_out=. --grpc_python_out=. pose.proto

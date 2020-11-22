@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "io.grpc.anolla.Action";
+option java_outer_classname = "OcrProto";
+option objc_class_prefix = "HLW";
+
+package anolla;
+
+// The greeting service definition.
+service Pose {
+  // Sends a greeting
+  rpc predict (PoseRequest) returns (PoseResponse) {}
+}
+
+// The request message containing the user's name.
+message PoseRequest {
+  bytes imgs = 1;
+  bytes output_shapes = 2;
+}
+
+// The response message containing the greetings
+message PoseResponse {
+  bytes poselist = 1;
+}

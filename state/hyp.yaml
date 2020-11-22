@@ -1,0 +1,14 @@
+angle1 : [70,130]
+angle2 : [150,210]
+angle3 : [150,210]
+min_rest : 10
+
+deque_state_size : 15
+work_interval : 5
+# ; deque_state_size = 25
+# ; work_interval = 7
+
+
+# deque_state_size : 25
+# work_interval : 30
+
